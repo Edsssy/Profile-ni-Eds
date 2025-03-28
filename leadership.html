@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Experience</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('bg.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; 
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%; 
+            max-width: 1000px;
+            text-align: left;
+            max-height: 90vh; 
+            overflow-y: auto; 
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .experience img {
+            width: 60px; 
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: black;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-button:hover {
+            background: gray;
+        }
+        .bubble {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 50%;
+            opacity: 1;
+            animation: floatUp 3s ease-out forwards;
+            pointer-events: none; 
+        }
+
+        @keyframes floatUp {
+            0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-150px);
+            opacity: 0;
+        }
+    }
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+    <div class="container">
+        <h2>Leadership Experience</h2>
+
+        <div class="experience">
+            <img src="nsrc.jpg" alt="NSRC Logo">
+            <div class="details">
+                <strong>Secretary - National Service Reserve Corps - NSTP SCCGTI Chapter</strong><br>
+                <i>(March 2023 - June 2023)</i>
+                <p>Manages 100% of meeting minutes and official documents for the organization, ensuring accuracy and easy access for all members. Coordinates 4 major events annually—Project ABAKADA for children, Project HANDA for calamities, Project HANGAD for gender and development, and Project LINGAP for job opportunities—ensuring smooth logistics and communication.</p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <img src="sccgti.jpg" alt="SPACE Logo">
+            <div class="details">
+                <strong>Secretary - Students Professional Alliance of Computer Engineers</strong><br>
+                <i>(November 2022 - June 2023)</i>
+                <p>Responsible for accurately documenting meeting minutes and maintaining organized records for the organization. Facilitates smooth communication between members, the faculty, and external stakeholders, ensuring all important updates and announcements are shared promptly. Supports the leadership team by being an active participant in discussions, contributing to the growth and development of the organization.</p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <img src="csc.jpg" alt="Student Council Logo">
+            <div class="details">
+                <strong>Secretary - Central Student Council - SCCGTI</strong><br>
+                <i>(September 2023 - June 2025)</i>
+                <p>Records and organizes 100% of meeting minutes and official council documents, ensuring they are accessible to all members. Coordinates monthly meetings and events, including planning, scheduling, and logistics, supporting council members and student organizations. Ensures smooth execution of council activities by maintaining organized records and documentation, contributing to the effective operation of the council and enhancing student engagement.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back-button">⬅ Back to Home</a>
+
+</body>
+</html>

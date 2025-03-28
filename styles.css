@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background: gray;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, auto);  
+    gap: 15px; 
+    padding: 10px;
+    width: 90%;
+    max-width: 900px;
+}
+
+.skill-box {
+    background: rgba(30, 58, 109, 0.9);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    width: 100%;
+    min-height: 60px; 
+    transition: 0.3s;
+}
+
+.skill-box img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; 
+}
+
+.skill-text {
+    flex-grow: 1; 
+}
+
+.skill-box:hover {
+    background: rgba(50, 80, 140, 0.9);
+}
+
+.contact-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box {
+    margin: 10px 0;
+}
+
+.contact-box strong {
+    display: block;
+    font-size: 14px;
+    color: gray;
+}
+
+.contact-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    width: 50px; 
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-icons img {
+    height: 40px; 
+    width: auto;
+    margin: 0 10px;
+}
+
+.social-icons a:hover img {
+    filter: invert(70%);
+    transform: scale(1.1);
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: gray;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+    opacity: 1;
+    animation: floatUp 3s ease-out forwards;
+    pointer-events: none; 
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('bg.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+        }
+        .job {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .job img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .job-details {
+            flex: 1;
+        }
+        h2, h3 {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-button:hover {
+            background: gray;
+        }
+        .bubble {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 50%;
+            opacity: 1;
+            animation: floatUp 3s ease-out forwards;
+            pointer-events: none; 
+        }
+
+        @keyframes floatUp {
+            0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-150px);
+            opacity: 0;
+        }
+    }
+    </style>
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <div class="container">
+        <div class="job">
+            <img src="walter.jpg" alt="WalterMart">
+            <div class="job-details">
+                <h3>Check-Out Representative - WalterMart Supermarket</h3>
+                <i>(September 2019 - January 2021)</i>
+                <p>Processes 30 - 50 transactions per shift with 99% accuracy, handling cash, credit, and digital payments efficiently. Ensures a fast and friendly checkout experience, reducing customer wait times through effective scanning and bagging. Maintains 100% compliance with store policies on discounts, refunds, and cash handling. Assists in inventory tracking and addresses customer inquiries, helping improve overall store efficiency.</p>
+            </div>
+        </div>
+        <div class="job">
+            <img src="hti.jpg" alt="House Technology Industries">
+            <div class="job-details">
+                <h3>Quality Assurance Inspector - House Technology Industries</h3>
+                <i>(April 2021 - September 2021)</i>
+                <p>Inspects 10+ units per shift to ensure 100% compliance with manufacturing standards and quality guidelines. Conducts precision measurements and process audits, reducing defects by 15% through proactive issue identification. Documents findings, reports non-conformities, and collaborates with production teams to enhance product quality. Supports continuous improvement efforts to maintain efficiency and minimize waste.</p>
+            </div>
+        </div>
+        <div class="job">
+            <img src="vxi.jpg" alt="VXI Global">
+            <div class="job-details">
+                <h3>Technical Support Representative - VXI Global Holdings</h3>
+                <i>(November 2021 - October 2022)</i>
+                <p>Handles 30+ customer inquiries per shift, troubleshooting mobile device network, software, and hardware issues. Resolves 90% of concerns on the first call, ensuring smooth connectivity, device functionality, and billing support. Guides customers through setup, configuration, and troubleshooting while maintaining 100% compliance with company policies. Provides excellent customer service to enhance satisfaction, retention, and brand trust.</p>
+            </div>
+        </div>
+        <div class="job">
+            <img src="tsa.jpg" alt="Telco Services International">
+            <div class="job-details">
+                <h3>Customer Contact Centre Officer - Telco Services International</h3>
+                <i>(January 2025 - Present)</i>
+                <p>Assists 20+ customers per shift with inquiries related to appliance usage, troubleshooting, and warranty claims. Resolves 90% of issues on the first interaction by providing clear and effective guidance. Ensures 100% compliance with company policies while handling product replacements, repairs, and service scheduling. Delivers exceptional customer service to strengthen brand loyalty and improve the overall consumer experience.</p>
+            </div>
+        </div>
+    </div>
+    <a href="index.html" class="back-button">⬅ Back to Home</a>
+</body>
+</html>
